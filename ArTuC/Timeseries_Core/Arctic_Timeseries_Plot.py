@@ -10,7 +10,7 @@ import netCDF4
 import pandas as pd
 
 #To find autumnal arctic anomaly we import ARCTIC_ANOMALY_CALC.py which contains function that calculates autumnal arctic anomaly
-from PY_extensions import ARCTIC_ANOMALY_CALC
+import .ARCTIC_ANOMALY_CALC
 
 anomalyseaice = ARCTIC_ANOMALY_CALC.arctic_autumnal_anomaly()
 
