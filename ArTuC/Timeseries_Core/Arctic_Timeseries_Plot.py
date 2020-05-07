@@ -200,9 +200,9 @@ def plot_spring_timeseries_ARCTIC(var):
         
     elif var == 'PRECIPWATER':
         data_spring = xr.open_dataset(r'C:\Users\Lenovo\ML\Elcinhoca_proje\dataset_adjusted\CFSR_1979_2019_PRECIPWATER_spring.nc')  
-        data_spring = data_spring['P_WAT_L200_Avg']
+        data_spring = data_spring['P_WAT_L200_Avg'][3:,:,:]
         plot_lim_A = 7
-        plot_lim_B = 14
+        plot_lim_B = 16
         plot_lim_sep = 1
         plot_title_ext = 'Precipitable Water(kg/m2)'
         plot_title = 'Precipitable Water(kg/m2)'
